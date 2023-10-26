@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="number" name="mobile" id="mobile">
+	<hr>
+	<h1 id="dName">NAME</h1>
+	<h2 id="dGender">GENDER</h2>
+	<h3 id="dEmail">EMAIL</h3>
+	<h4 id="dMobile">MOBILE</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+	<script type="text/javascript">
+		/*input*/
+		let iname=document.getElementById("name")
+		let igender=document.getElementById("gender")
+		let iemail=document.getElementById("email")
+		let imobile=document.getElementById("mobile")
+
+		/*heading */
+		let hname=document.getElementById("dName")
+		let hgender=document.getElementById("dGender")
+		let hemail=document.getElementById("dEmail")
+		let hmobile=document.getElementById("dMobile")
+
+		function showName() {
+			hname.innerText='NAME :'+iname.value;
+		}
+
+		function showGender() {
+			
+			hgender.innerText='GENDER :'+igender.value;
+		}
+
+		function showEmail() {
+			
+			hemail.innerText='EMAIL :'+iemail.value;
+		}
+
+		function showMobile() {
+			
+			hmobile.innerText='MOBILE :'+imobile.value;
+		}
+
+		function resetForm() {
+			iname.value=""
+			igender.value=""
+			iemail.value=""
+			imobile.value=""
+		}
+
+		function resetDisplay() {
+			hname.innerText='NAME ';
+			hgender.innerText='GENDER ';
+			hemail.innerText='EMAIL ';
+			hmobile.innerText='MOBILE ';
+		}
+	</script>
+</body>
+</html>

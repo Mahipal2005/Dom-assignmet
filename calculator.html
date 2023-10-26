@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="number"  id="firstnumber" placeholder="enter 1st Number">
+    <input type="number"  id="secondnumber" placeholder="enter 2st Number">
+    <button onclick="Addition()">Add</button>
+    <button onclick="Subtraction()">Subtract</button>
+    <button onclick="Multiplication()">Multiply</button>
+    <button onclick="Division()">Divide</button>
+</body>
+</html>
+<script>
+    let number1 = document.getElementById("firstnumber")
+    let number2 = document.getElementById("secondnumber")
+    function Addition(){
+        number1=Number(number1.value)
+        number2=Number(number2.value)
+        alert(number1 + number2 )
+    }
+    function Subtraction(){
+        number1=Number(number1.value)
+        number2=Number(number2.value)
+        alert(number1 - number2 )
+    }
+    function Division(){
+        number1=Number(number1.value)
+        number2=Number(number2.value)
+        alert(number1 / number2 )
+    }
+    function Multiplication(){
+        number1=Number(number1.value)
+        number2=Number(number2.value)
+        alert(number1 * number2 )
+    }
+</script>
